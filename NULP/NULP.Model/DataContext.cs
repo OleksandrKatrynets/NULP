@@ -10,7 +10,7 @@ namespace NULP.Model
         {
             get
             {
-                const string password = "SetTv0195";
+                const string password = "";
                 if (string.IsNullOrEmpty(password))
                 {
                     throw new NotImplementedException();
