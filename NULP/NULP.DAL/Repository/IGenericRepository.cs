@@ -1,9 +1,10 @@
 using System.Linq;
 using System.Threading.Tasks;
+using NULP.Model.Models;
 
 namespace NULP.DAL.Repository
 {
-    public interface IGenericRepository<TEntity> where TEntity : class
+    public interface IGenericRepository<TEntity> where TEntity : class, IEntity
     {
         IQueryable<TEntity> GetAll();
 
